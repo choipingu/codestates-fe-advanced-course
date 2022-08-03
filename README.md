@@ -3,7 +3,7 @@
 - #### 프로젝트 실행 방법
   - client 폴더 내에서 npm install 후 npm run start로 실행 가능합니다
 - #### 사용한 스택 목록
-  - <img src="https://img.shields.io/badge/javascript-F7DF1E?style=plastic&logo=javascript&logoColor=black">  , <img src="https://img.shields.io/badge/React-61DAFB?style=plastic&logo=react&logoColor=black"/>  
+  - <img src="https://img.shields.io/badge/javascript-F7DF1E?style=plastic&logo=javascript&logoColor=black">  , <img src="https://img.shields.io/badge/React-61DAFB?style=plastic&logo=react&logoColor=black"/>  , <img src="https://img.shields.io/badge/styled-components-DB7093?style=plastic&logo=styled-components&logoColor=black"/>
 - #### 구현한 기능 목록 (Software Requirement Specification)
   - 페이지네이션
 - #### 구현 방법 혹은 구현하면서 어려웠던 점
