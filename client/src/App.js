@@ -1,48 +1,29 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import { Routes, Route } from 'react-router-dom'
 import styled from 'styled-components'
-import Pagination from "./pagination";
-
+import Main from './main.js'
+import Detail from './detail.js'
 function App() {
-  const [data, setData] = useState([])
-  const [page, setPage] = useState(1)
-  const offSet = (page - 1) * 10
-  const dataFetch = async () => {
-    await axios.get(`https://jsonplaceholder.typicode.com/posts`)
-      .then((res) => setData(res.data))
-  }
 
-  useEffect(() => {
-    dataFetch()
-  }, [])
-  console.log(data)
+
   return (
-    <Container>
-      <div>
-        {data.slice(offSet, offSet + 10).map(({ userId, title, index }) => (
-          <Post key={index}>
-            <h3>{title}</h3><p>작성자 : {userId}</p>
-          </Post>
-        ))}
-      </div>
-      <div>
-        <Pagination
-          total={data.length}
-          page={page}
-          setPage={setPage}
-        />
-      </div>
-    </Container>
-  );
+    <>
+      <Head>CodeStates</Head>
+      <Routes>
+        <Route path='/' element={<Main />} />
+        <Route path='/detail/:id' element={<Detail />} />
+      </Routes>
+    </>
+  )
 }
-const Container = styled.div`
+const Head = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  `
-const Post = styled.div`
-  display: flex;
-  
+  justify-content: center;
+  font-size: 30px;
+  background-color: purple;
+  color: white;
+  width: 100%;
+  height: 50px;
 `
 export default App;
