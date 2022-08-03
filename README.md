@@ -1,10 +1,14 @@
 # codestates-fe-advanced-course
-- 완성된 GIF 파일 및 배포 링크
-- 프로젝트 실행 방법
-- 사용한 스택 목록
-- 구현한 기능 목록 (Software Requirement Specification)
-- 구현 방법 혹은 구현하면서 어려웠던 점
-- (가산점) 직접 작성한 Wireframe 혹은 Prototype (figma 등의 다양한 툴 활용)
-- (가산점) 성능 최적화에 대해서 고민하고 개선한 방법
-- (가산점) 추가 구현 사항에 대한 구현 방법과 설명
+- #### 배포 링크 : http://codestates-advanced2.s3-website-us-east-1.amazonaws.com/
+- #### 프로젝트 실행 방법
+  - client 폴더 내에서 npm install 후 npm run start로 실행 가능합니다
+- #### 사용한 스택 목록
+  - <img src="https://img.shields.io/badge/javascript-F7DF1E?style=plastic&logo=javascript&logoColor=black">  , <img src="https://img.shields.io/badge/React-61DAFB?style=plastic&logo=react&logoColor=black"/>  
+- #### 구현한 기능 목록 (Software Requirement Specification)
+  - 페이지네이션
+- #### 구현 방법 혹은 구현하면서 어려웠던 점
+  - 댓글 데이터가 500개가 있었는데 하나하나 따로 부르는게 난감했었는데 filter를 사용해서 게시물의 댓글만 가져오게 하였더니 잘 풀렸습니다.
+- #### 성능 최적화에 대해서 고민하고 개선한 방법
+  - 이전의 팀 프로젝트에서 구현한 페이지네이션에서는 서버쪽에서 일정갯수만큼 잘라서 보내주었었는데 그렇게 하다보니 서버쪽에서 여러번 반복하게 되었고 다른곳에서 데이터를 불러올때 복잡해지는 과정이 생겨서 난감했었는데 이번에 페이지네이션을 구현할땐 프론트쪽에서 잘라내기때문에 성능면에서 최적화되었다고 생각합니다
 - 등 해당 과제에 대해서 소개하고 싶은 내용을 자유롭게 적어주세요.
+  - 최대한 심플하고 사전 안내에 따라 목적에 맞게 구현을 하였습니다.
